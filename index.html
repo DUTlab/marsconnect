@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="This is the DUTlab-SpaceApps website">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>         
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Space Apps - DUTlab</title>
+        <link rel="shortcut icon" type="image/png" href="son favicon.png"/>
+    </head>    
+    <body>
+        
+           <img src="sunrise.jpg" id="asd">
+      <div class="container-fluid justify-content-center">
+                <body class="view-2D zoom-large data-open controls-close">
+                    <div id="navbar">
+                      <a id="toggle-data" href="problems.html"><i class="icon-data"></i>Information</a>
+                    <h1>DUTlab SpaceApps-2020<br><span>==><a id="canu" href="problems.html"> Can You Hear Me?</a> <==</span></h1>
+                      
+                      <a id="toggle-controls" href="#controls"><i class="icon-controls"></i>Controls</a>
+                    </div>
+                    <div id="data">
+                      <a class="sun" title="sun"></a>
+                                                           
+                    </div>
+                    <div id="controls">
+                      <label class="set-view">
+                        <input type="checkbox">
+                      </label>
+                      
+                      <label>
+                        <input type="radio" class="set-speed" name="scale" checked>
+                        <span>Delay of Emergancy Messages</span>
+                      </label>
+                      <label>
+                        <input type="radio" class="set-size" name="scale">
+                        <span>Interrupting Data Transmission</span>
+                      </label>
+                      <label>
+                        <input type="radio" class="set-distance" name="scale">
+                        <span>The Impossibility of Astronauts'<br> Communication</span>
+                      </label>
+                      <label>
+                        <input type="radio" class="set-speed2" name="scale">
+                        <span>Inability to Beat the Speed of Light</span>
+                      </label>
+                      <label>
+                        <input type="radio" class="set-size2" name="scale">
+                        <span>The Corruption of Transmitted Data <br>
+                        Between 2 Planets</span>
+                      </label>
+                      <label>
+                        <input type="radio" class="set-distance2" name="scale">
+                        <span>Is It OK?</span>
+                      </label>
+                      <label>
+                        <input type="radio" class="set-speed3" name="scale">
+                        <span>There is No Internet!</span>
+                      </label>
+                     
+                    </div>
+                    <div id="universe" class="scale-stretched">
+                      <div id="galaxy">
+                        <div id="solar-system" class="sun">
+                          
+                        
+                          <div id="earth" class="orbit">
+                            <div class="pos">
+                              <div class="orbit">
+                                <div class="pos">
+                                  <div class="moon"></div>
+                                </div>
+                              </div>
+                              <div class="planet">
+                                <dl class="infos">
+                                  <dt>Earth</dt>
+                                  <dd><span></span></dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                          <div id="mars" class="orbit">
+                            <div class="pos">
+                              <div class="planet">
+                                <dl class="infos">
+                                  <dt>Mars</dt>
+                                  <dd><span></span></dd>
+                                </dl>
+                              </div>
+                            </div>
+                          </div>
+                        
+                                          
+                          <div id="sun">
+                            <dl class="infos">
+                              <dt><a id="more" href="problems.html">Click for more</a></dt>
+                              <dd><span></span></dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+                    <script type="text/javascript">
+                    if (typeof jQuery == 'undefined') { 
+                      document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+                    }
+                    </script>
+                    <script src="js/prefixfree.min.js"></script>
+                    <script src="js/scripts.min.js"></script>
+                  </body>
+              
+      </div>
+     <script>
+         $(window).load(function(){
+
+        var body = $("body"),
+            universe = $("#universe"),
+            solarsys = $("#solar-system");
+
+        var init = function() {
+        body.removeClass('view-2D opening').addClass("view-3D").delay(2000).queue(function() {
+            $(this).removeClass('hide-UI').addClass("set-speed");
+            $(this).dequeue();
+        });
+        };
+      
+
+        var setView = function(view) { universe.removeClass().addClass(view); };
+
+        $("#toggle-data").click(function(e) {
+        body.toggleClass("data-open data-close");
+        e.preventDefault();
+        });
+
+        $("#toggle-controls").click(function(e) {
+        body.toggleClass("controls-open controls-close");
+        e.preventDefault();
+        });
+
+        $("#data a").click(function(e) {
+        var ref = $(this).attr("class");
+        solarsys.removeClass().addClass(ref);
+        $(this).parent().find('a').removeClass('active');
+        $(this).addClass('active');
+        e.preventDefault();
+        });
+
+        $(".set-view").click(function() { body.toggleClass("view-3D view-2D"); });
+        $(".set-speed").click(function() { setView("scale-stretched set-speed"); });
+        $(".set-size").click(function() { setView("scale-s set-size"); });
+        $(".set-distance").click(function() { setView("scale-d set-distance"); });
+        $(".set-speed2").click(function() { setView("scale-stretched set-speed2"); });
+        $(".set-size2").click(function() { setView("scale-s set-size2"); });
+        $(".set-distance2").click(function() { setView("scale-d set-distance2"); });
+        $(".set-speed3").click(function() { setView("scale-stretched set-speed3"); });
+        $(".set-size3").click(function() { setView("scale-s set-size3"); });
+        $(".set-distance3").click(function() { setView("scale-d set-distance3"); });
+        $(".set-speed4").click(function() { setView("scale-stretched set-speed4"); });
+        init();
+        
+
+        });
+     </script>
+     <script>
+
+      $(document).ready(function(){
+        $('.container-fluid').hide();
+      })
+          $('#asd').click(function(){
+              $('#asd').fadeOut(1500, function(){
+                $('.container-fluid').fadeIn(2000);
+              });
+
+  
+          })
+       
+          
+       
+         
+  
+  
+      
+  
+  
+      
+  
+  
+  </script>
+    
+    </body>
+
+
+</html>

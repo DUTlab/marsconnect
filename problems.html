@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="This is the DUTlab-SpaceApps website">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link type="text/css" rel="stylesheet" href="myStyle.css">
+        <script src="myScript.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <meta name="author" content="Eren Karasal w/ Süleyman Mansuroğlu">
+        <title>Space Apps - DUTlab</title>
+        <link rel="shortcut icon" type="image/png" href="son favicon.png"/>
+        
+    </head> 
+    <body>
+            
+        
+      
+            <div class="container-fluid" >
+              
+              
+                
+                <div class="row " >                
+                   <img src="spaceApps.png" class="d-block mx-auto  spaceApps"  >
+                   <img src="dutlab.png" class="d-block mx-auto  dutlab"  > 
+                   
+                    
+                </div>
+                <div class="row justify-content-center menu">
+                  <!-- responsive equal width cols, can be sm, md, lg, or xl -->
+
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-info"><a href="#zorluk1">Difficult-1</a></button>
+                    <button type="button" class="btn btn-info"><a href="#zorluk2">Difficult-2</a></button>
+                    <button type="button" class="btn btn-info"><a href="#zorluk3">Difficult-3</a></button>
+                    <button type="button" class="btn btn-info"><a href="#zorluk4">Difficult-4</a></button>
+                    <button type="button" class="btn btn-info"><a href="#zorluk5">Difficult-5</a></button>
+                    <button type="button" class="btn btn-info"><a href="#zorluk6">Difficult-6</a></button>
+                    <button type="button" class="btn btn-info"><a href="#zorluk7">Difficult-7</a></button>
+                    
+                   
+                    
+                  </div>
+                    
+
+
+                </div>
+
+                <hr> 
+
+                 <div class="row justify-content-center">
+                                       
+                    <div class="col" >
+                     
+                      <div class="row justify-content-center">
+                        <iframe width="660" height="415" src="https://www.youtube.com/embed/q7Rl0b3U_LQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                     
+                      <br>
+                      <div class="row justify-content-center" id="zorluk1">
+                        <div class="card">
+                          <img id="change-image" class="card-img-top img-fluid" src="acildurumsorun.gif"  alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title" >Delay of Emergancy Messages</h4>
+                            <div class="card-text" id="bank" style="word-wrap: break-word;">
+                              Welcome to the DUTlab Space Agency. Be fast!. We have an emergancy right now.<br>
+                              A meteroite will hit Mars. We must inform our astronauts that they must leave immediately.<br>
+                              Which data transmission method do you think will be further?<br><br>
+                            </div>
+                            <div class="card-text" id="fancy" style="word-wrap: break-word;">
+                              LCRD<br>
+                              The mission will use lasers to encode and transmit data at rates 10 to 100 times better than<br>
+                              radio systems, using significantly less mass and power. The wavelength of the laser light is<br>
+                              orders of magnitude shorter than radio waves, meaning the energy is not spread out as much<br>
+                              as it travels through space.<br>
+                              -Advantage(vs RF):<br>
+                              ●	The amount of data sent is higher.<br>
+                              ●	It needs less power when sending data at the same rate as RF<br>
+                              ●	Satellites that used for data transmission have smaller size and smaller mass than <br>
+                              satellites that used in radio waves.<br>
+                              -Disadvantages:<br>
+                              ●	Data transmission does not occur in cloudy and stormy weather.<br>
+                              <br><br>
+
+                            </div>
+                            <div class="card-text" id="yazi" style="word-wrap: break-word;">
+                              Radio technology, transmission and detection of communication signals consisting of<br>
+                              electromagnetic waves that travel through the air in a straight line or by reflection from the<br>
+                              The stationary satellite provides almost 24/7 communication that is interrupted<br>
+                              ionosphere or from a communications satellite.<br>
+                              -Advantages: <br><br>
+                              ●	Radio waves can be transmitted at a wider angle.<br>
+                              -Disadvantage: Space waves reflect off objects and can be blocked if the object is between<br>
+                              transmitter and receiver.<br>
+                              <br><br>
+
+                            </div>
+                            <a  class="btn btn-primary button1">LCRD</a>
+                            <a  class="btn btn-primary button2">Radio Waves</a>
+                            <a  class="btn btn-primary button3">back</a>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row justify-content-center" id="zorluk2">
+                        <div class="card">
+                          <img id="change-image2" class="card-img-top img-fluid" src="gunessorun.gif"  alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title" >Interrupting Data transmission</h4>
+                            <div class="card-text" id="bank2" style="word-wrap: break-word;">
+                              We have a big problem. The sun is between Mars and Earth. Our data encounters a<br>
+                              major barrier. In this case, data arrives at the destination with a delay. We want to minimize this<br>
+                              waste of time. Which system do you think is more useful for us?<br><br>
+                            </div>
+                            <div class="card-text" id="fancy2" style="word-wrap: break-word;">
+                              DTN<br>
+                              Delay/Disruption Tolerant Networking (DTN) is NASA’s solution to reliable internetworking for<br>
+                              space missions.<br>
+                              DTN provides assured delivery of data using automatic store-and-forward mechanisms.<br>
+                              Each data packet that is received is forwarded immediately if possible, but stored for future<br>
+                              transmission if forwarding is not currently possible but is expected to be possible in the future.<br>
+                              Advantage:<br>
+                              ● DTN enables more reliable and efficient data transmissions resulting in more usable <br>
+                              bandwidth. DTN also improves link reliability by having multiple network paths and <br>
+                              assets for potential communication hops.<br>
+                              The DTN protocol suite allows for many priority levels to be set for different data types,<br>
+                              ensuring that the most important data is received ahead of less important data.<br>
+                              Disadvantages<br>
+                              ●	Data transmission time becomes longer<br><br>
+
+                            </div>
+                            <div class="card-text" id="yazi2" style="word-wrap: break-word;">
+                              The communications system consists of a satellite in orbit around Mars, one<br> in orbit around the sun, and ground stations on Earth.<br>
+   The satellite over the Mars settlement is an areostationary satellite,<br> the Mars equivalent of a geostationary satellite. It is always<br> in the same place in the sky on Mars, receiving data from the<br> settlement and transmitting it to Earth. On Earth the data is <br>received by ground stations using large satellite dishes. The areostationary<br> satellite enables almost 24/7 communication, which is interrupted<br> only when Mars is in between the satellite and the Earth.<br>
+   This is solved by placing a second satellite in an orbit<br> around the sun. It will follow the same orbit as the Earth does but<br> trails 60 degrees behind it in the L5 Lagrangian point of the Sun-Earth<br> system. With this second satellite in place, when Mars is in between the<br> areostationary satellite and the Earth, the signal can be relayed by the<br> second satellite.
+   Once every 26 months, the Sun is exactly<br> in between Mars and the Earth. This occultation lasts about six<br> weeks. The second communications satellite will also be used to relay<br> signals during this period.<br>
+Advantages: <br>
+●	Elimination of this 2-week data transmission interruption.<br>
+Disadvantages:<br>
+●	When the Sun is in between Mars and the Earth and at the same time<br> Mars is in between the areosynchronous satellite and the second<br> satellite, we will have no contact with Mars for about two hours.<br><br>
+
+
+                            </div>
+                            <a  class="btn btn-primary button4">DTN</a>
+                            <a  class="btn btn-primary button5">Satellite</a>
+                            <a  class="btn btn-primary button6">Back</a>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row justify-content-center" id="zorluk3">
+                        <div class="card">
+                          <img id="change-image3" class="card-img-top img-fluid" src="marssorun.gif"  alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title" >The Impossibility of Astronauts Communication</h4>
+                            <div class="card-text" id="bank3" style="word-wrap: break-word;">
+                              Mustafa,Kemal will go to Mars the spaceship named Atatürk.Our astronauts will conduct research<br> at two different sites of mount Olympos. But they will not be able to communicate because of the<br> barrier between them. How a system can be used to solve this problem<br>
+                            </div>
+                            <div class="card-text" id="fancy3" style="word-wrap: break-word;">
+                              Satellite should be added<br>
+                              ●	By using this system, communication between astronauts who have a long<br> distance between them is provided through satellites. The signals from the<br> radio of the first astronauts are transmitted to the satellite. <br>Then they are transmitted from the satellite to the second astronaut.<br><br>
+
+                            </div>
+                            <div class="card-text" id="yazi3" style="word-wrap: break-word;">
+                              Bluetooth networks transmit data in the form of low power radio waves.<br> It communicates between 2.402 GHz and 2.480 GHz at a frequency. <br>One of the methods used to prevent Bluetooth devices from being affected by other devices<br> is to send a very weak signal at the level of 1 milliwatt. It allows a device<br> to broadcast multiple times simultaneously, using a method known<br> as Bluetooth spread-spectrum frequency hopping. In this technique, there<br> are 79 independent frequencies with predetermined frequency range values, one<br> of which is randomly selected. It changes regularly from one<br> to another. Under these conditions of Bluetooth, the transmitter<br> changes the frequency 1600 times in one second. So <br>more devices can make full use of the limited radio frequency zone.<br>
+Disadvantage:<br>
+●	Ability to send data up to 10 meters.<br><br>
+
+
+                            </div>
+                            <a  class="btn btn-primary button7">Satellite</a>
+                            <a  class="btn btn-primary button8">Bluetooth</a>
+                            <a  class="btn btn-primary button9">back</a>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row justify-content-center" id="zorluk4">
+                        <div class="card">
+                          <img id="change-image4" class="card-img-top img-fluid" src="spaceApps.png"  alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title" >Inability to Beat the Speed of Light</h4>
+                            <div class="card-text" id="bank4" style="word-wrap: break-word;">
+                              There are two astronauts on Mars. There must always be at least 1 astronaut at the research station<br> on Mars. The other astronaut can go on an expedition. The positioning system of the<br> Astronaut on an expedition has been broken. First astronaut sent a message<br> to the mission center in the world and the research station<br> on Mars at the same time to report the situation. The other<br> astronaut needs permission from the space station on earth to leave<br> the research center. Which solution can be able to connect<br> to other astronout and earth?<br><br>
+                            </div>
+                            <div class="card-text" id="fancy4" style="word-wrap: break-word;">
+                              Quantum<br>
+                              Entanglement is a phenomenon unique to quantum mechanics. According<br> to quantum physics, two similar particles are in synchronicity with<br> each other. Even if these particles are at very long distances<br> from each other in separate places, what happens in one<br> affects the other in the same way. In simpler terms, <br>assuming that twin siblings are in separate countries, a<br> sibling raising his right hand means raising his<br> right hand in his brother in the other country. According to<br> this theory, data transmission can occur faster than the speed of light<br><br>
+
+                            </div>
+                            
+                            <a  class="btn btn-primary button10">Quantum</a>
+                           
+                            <a  class="btn btn-primary button12">Back</a>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row justify-content-center" id="zorluk5">
+                        <div class="card">
+                          <img id="change-image5" class="card-img-top img-fluid" src="gunessorun.gif"  alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title" >The Corruption of Transmitted Data Between 2 Planets </h4>
+                            <div class="card-text" id="bank5" style="word-wrap: break-word;">
+                              There is distortion in the data sent to us from Mars due to electromagnetic waves from the sun.<br>This reduces the quality of the data. How can this problem be overcome?<br><br>
+                            </div>
+                            <div class="card-text" id="fancy5" style="word-wrap: break-word;">
+                              DSOC<br>
+                              Communications between space and ground will employ novel,<br> advanced lasers in the near-infrared region of the electromagnetic<br> spectrum. These systems will be capable of delivering information<br> rates at least 10 times faster than conventional systems<br> that use comparable mass and power.<br>
+    Key DSOC technologies developed for the project<br> include: a low-mass spacecraft disturbance isolation and pointing<br> assembly; a high-efficiency flight laser transmitter; and a pair<br> of high-efficiency photon counting detector arrays<br> for the flight optical transceiver and the ground-based receiver.<br> These technologies are integrated into the DSOC flight laser transmitter<br> and ground-based receiver to enable photon-efficient communications<br> with the capability to discern faint laser signals from background "noise" contributed <br>by solar energy scattered by the Earth's atmosphere.<br>
+Advantages:<br>
+●	Reduces background noise.
+<br><br>
+
+                            </div>
+                            
+                            
+                            <a  class="btn btn-primary button14">DSOC</a>
+                            <a  class="btn btn-primary button15">Back</a>
+                          </div>
+                        </div>
+                      </div>
+<br>
+                      <div class="row justify-content-center" id="zorluk6">
+                        <div class="card">
+                          <img id="change-image6" class="card-img-top img-fluid" src="goruldusorun.gif"  alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title" >Is is Okey?</h4>
+                            <div class="card-text" id="bank6" style="word-wrap: break-word;">
+                              Our astronaut working on Mars has sent the wish list to the world to use Mars. But he forgot<br> to ask for his favorite dvd's. He later sent a message again, but he doesn't know if this<br> message was delivered to the world. How can I get this information?<br><br>
+                            </div>
+                            <div class="card-text" id="fancy6" style="word-wrap: break-word;">
+                              Seen?<br>
+                              A feedback must be given that a message sent from Mars is being transmitted. İf this feedback<br> is not provided, it cannot be known whether the message has been transmitted. Because the<br> message travels unilaterally through in space to Earth. Because this<br> message can be missed by stations around the world, the message can be lost in space.<br><br>
+
+                            </div>
+                            
+                            <a  class="btn btn-primary button16">Seen</a>
+                            
+                            <a  class="btn btn-primary button18">Back</a>
+                          </div>
+                        </div>
+                      </div>
+<br>
+                      <div class="row justify-content-center" id="zorluk7">
+                        <div class="card">
+                          <img id="change-image7" class="card-img-top img-fluid" src="hbd1.gif"  alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title" >There is no Internet!</h4>
+                            <div class="card-text" id="bank7" style="word-wrap: break-word;">
+                              Today is the birthday of the daughter of one of our astronauts. She wants to send a gift to<br> her daughter. She can order online. But the internet is not used here.<br> Some infrastructure work is being done to solve this problem. Which one is not one of these<br> studies?<br><br>
+                            </div>
+                            <div class="card-text" id="fancy7" style="word-wrap: break-word;">
+                              LCRD<br>
+                              DTN<br>
+                              Satellite Arrangement<br>
+                              <br><br>
+
+                            </div>
+                            <div class="card-text" id="yazi7" style="word-wrap: break-word;">
+                              Radio Waves(Wi-Fi)<br>
+                              Wireless network ports actually work the same as the router modems we know and are systems<br> that generate small radio waves.
+Connection is performed at 2.4 GHz or 5 GHz radio frequency,<br> depending on the IEEE 802.11 protocol, which is supported jointly by the wireless access points and the device.<br> The data is sent and received in accordance with the CSMA / CA<br> (Carrier sense multiple access with collision avoidance) protocol, thus solving<br> the problem of error during the transmission of packets.
+<br><br>
+
+                            </div>
+                            <a  class="btn btn-primary button19">L-D-S</a>
+                            <a  class="btn btn-primary button20">Radio Wawes</a>
+                            <a  class="btn btn-primary button21">Back</a>
+                          </div>
+                        </div>
+                      </div>
+
+                     
+                    </div>
+                 </div> 
+            </div> 
+            <br>
+            <div class="container-fluid">
+                
+              <!----------- Footer ------------>
+              <footer class="footer-bs">
+                  <div class="row">
+                      
+                      <div class="col-md-2 footer-nav animated fadeInUp">
+                          <h4>Our Projects —</h4>
+                          <div class="col-md-6">
+                              <ul class="pages">
+                                  <li><a href="http://www.aysancak.dutlab.com/">Aysancak</a></li>
+                                  <li><a href="http://www.bluedut.dutlab.com/">BlueDUT</a></li>
+                                  
+                              </ul>
+                          </div>
+                          
+                      </div>
+                      <div class="col-md-2 footer-social animated fadeInDown">
+                          <h4>Follow Us</h4>
+                          <ul>
+                             
+                              <li><a href="https://twitter.com/Dutlab_">Twitter</a></li>
+                              <li><a href="https://www.instagram.com/dutlab_/">Instagram</a></li>
+                              <li><a href="http://dutlab.com/">DUTlab</a></li>
+
+                          </ul>
+                      </div>
+                      <div class="col-md-4 footer-ns animated fadeInRight footer-social">
+                          <h4>Sources</h4>
+                          <li><a href="https://www.nasa.gov/mission_pages/tdm/lcrd/index.html
+
+                            https://www.britannica.com/technology/radio-technology
+                            ">Difficult-1</a></li>
+                          <li><a href="https://www.mars-one.com/technology/communications-system/
+
+                            https://www.nasa.gov/content/dtn
+                            ">Difficult-2</a></li>
+                          <li><a href="https://www.elektronikhaberlesme.org/uydu-haberlesmesi/
+                            https://www.turksan.com/bluetooth-haberlesme.html
+                            ">Difficult-3</a></li>
+                            
+
+                      </ul>
+                  </div>
+                  <div class="col-md-4 footer-ns animated fadeInRight footer-social">
+                      <h4>Sources</h4>
+                      <ul>
+                        <li><a href="https://tr.wikipedia.org/wiki/Kuantum_dolan%C4%B1kl%C4%B1k
+                          https://evrimagaci.org/kuantum-dolaniklik-5208
+                          ">Difficult-4</a></li>
+                          <li><a href="https://www.nasa.gov/mission_pages/tdm/dsoc/index.html">Difficult-5</a></li>
+                          <li><a href=":https://noktadannoktaya.com/wifi-sistemleri-nedir-nasil-calisir/
+                            https://www.bilgiustam.com/kablosuz-ag-sistemi-nedir-nasil-calisir/
+                            ">Difficult-7</a></li>
+                         
+
+                      </ul>
+                      </div>
+                  </div>
+                  <div class="row justify-content-center">
+                      <p>by <a id="copyright" href="https://www.linkedin.com/in/emresezerr/"> Emre SEZER</a><a id="copyright" href="https://www.linkedin.com/in/eren-karasal-07491615a/"> w/ Eren KARASAL</a> w/ <a id="copyright" href="https://www.linkedin.com/in/s%C3%BCleyman-mansuro%C4%9Flu-441704198/">Süleyman MANSUROĞLU</a><a id="copyright" href="https://www.linkedin.com/in/ebru-keskin-1a597b189/">w/ Ebru KESKİN</a><a id="copyright" href="https://www.linkedin.com/in/selin-akal%C4%B1n-4976191b6/">w/ Selin AKALIN</a><a id="copyright" href="https://www.linkedin.com/in/bilginburakoztoprak/">w/ Burak Bilgin ÖZTOPRAK</a>@ 2020 <a href="http://dutlab.com/"> DUTlab</a></p>
+                 
+                    </div>
+              </footer>
+          
+          </div>
+
+
+            
+            
+            
+            
+
+
+
+
+
+
+
+        
+
+        
+
+<!----------------------eren------------------------------------------>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+   $('#fancy,#yazi').hide();
+  });
+ 
+     $('.button3').click(function(e){    
+         $('#fancy,#yazi').fadeOut('slow', function(){
+            $('#bank').fadeIn('slow');
+           });
+   });
+ 
+   $('.button1').click(function(e){    
+        $('#bank,#yazi').fadeOut('slow', function(){
+            $('#fancy').fadeIn('slow');
+        });
+ });
+ $('.button2').on({
+     'click':function(){
+         $('#bank,#fancy').fadeOut('slow',function(){
+ 
+             $('#yazi').fadeIn('slow');
+         });
+         
+     }
+ });
+      
+ </script>
+<script type="text/javascript">
+  $(document).ready(function() {
+   $('#fancy2,#yazi2').hide();
+  });
+ 
+     $('.button6').click(function(e){    
+         $('#fancy2,#yazi2').fadeOut('slow', function(){
+            $('#bank2').fadeIn('slow');
+           });
+   });
+ 
+   $('.button4').click(function(e){    
+        $('#bank2,#yazi2').fadeOut('slow', function(){
+            $('#fancy2').fadeIn('slow');
+        });
+ });
+ $('.button5').on({
+     'click':function(){
+         $('#bank2,#fancy2').fadeOut('slow',function(){
+ 
+             $('#yazi2').fadeIn('slow');
+         });
+         
+     }
+ });
+      
+ </script>
+<script type="text/javascript">
+  $(document).ready(function() {
+   $('#fancy3,#yazi3').hide();
+  });
+ 
+     $('.button9').click(function(e){    
+         $('#fancy3,#yazi3').fadeOut('slow', function(){
+            $('#bank3').fadeIn('slow');
+           });
+   });
+ 
+   $('.button7').click(function(e){    
+        $('#bank3,#yazi3').fadeOut('slow', function(){
+            $('#fancy3').fadeIn('slow');
+        });
+ });
+ $('.button8').on({
+     'click':function(){
+         $('#bank3,#fancy3').fadeOut('slow',function(){
+ 
+             $('#yazi3').fadeIn('slow');
+         });
+         
+     }
+ });
+      
+ </script>
+<script type="text/javascript">
+  $(document).ready(function() {
+   $('#fancy4,#yazi4').hide();
+  });
+ 
+     $('.button12').click(function(e){    
+         $('#fancy4,#yazi4').fadeOut('slow', function(){
+            $('#bank4').fadeIn('slow');
+           });
+   });
+ 
+   $('.button10').click(function(e){    
+        $('#bank4,#yazi4').fadeOut('slow', function(){
+            $('#fancy4').fadeIn('slow');
+        });
+ });
+ $('.button11').on({
+     'click':function(){
+         $('#bank4,#fancy4').fadeOut('slow',function(){
+ 
+             $('#yazi4').fadeIn('slow');
+         });
+         
+     }
+ });
+      
+ </script>
+<script type="text/javascript">
+  $(document).ready(function() {
+   $('#fancy5,#yazi5').hide();
+  });
+ 
+     $('.button15').click(function(e){    
+         $('#fancy5,#yazi5').fadeOut('slow', function(){
+            $('#bank5').fadeIn('slow');
+           });
+   });
+ 
+   $('.button14').click(function(e){    
+        $('#bank5,#yazi5').fadeOut('slow', function(){
+            $('#fancy5').fadeIn('slow');
+        });
+ });
+ $('.button13').on({
+     'click':function(){
+         $('#bank5,#fancy5').fadeOut('slow',function(){
+ 
+             $('#yazi5').fadeIn('slow');
+         });
+         
+     }
+ });
+      
+ </script>
+
+ <script type="text/javascript">
+  $(document).ready(function() {
+   $('#fancy6,#yazi6').hide();
+  });
+ 
+     $('.button18').click(function(e){    
+         $('#fancy6,#yazi6').fadeOut('slow', function(){
+            $('#bank6').fadeIn('slow');
+           });
+   });
+ 
+   $('.button16').click(function(e){    
+        $('#bank6,#yazi6').fadeOut('slow', function(){
+            $('#fancy6').fadeIn('slow');
+        });
+ });
+ $('.button17').on({
+     'click':function(){
+         $('#bank6,#fancy6').fadeOut('slow',function(){
+ 
+             $('#yazi6').fadeIn('slow');
+         });
+         
+     }
+ });
+      
+ </script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+   $('#fancy7,#yazi7').hide();
+  });
+ 
+     $('.button21').click(function(e){    
+         $('#fancy7,#yazi7').fadeOut('slow', function(){
+            $('#bank7').fadeIn('slow');
+           });
+   });
+ 
+   $('.button19').click(function(e){    
+        $('#bank7,#yazi7').fadeOut('slow', function(){
+            $('#fancy7').fadeIn('slow');
+        });
+ });
+ $('.button20').on({
+     'click':function(){
+         $('#bank7,#fancy7').fadeOut('slow',function(){
+ 
+             $('#yazi7').fadeIn('slow');
+         });
+         
+     }
+ });
+      
+ </script>
+
+
+        <script>
+          $('.button1').on({
+          'click': function(){
+          $("#change-image")
+              .fadeOut(1000, function() {
+                   $('#change-image').attr('src','acildurumcevap1.gif');
+              })
+              .fadeIn(1000);
+              
+          }
+      });
+      
+      $('.button2').on({
+          'click': function(){
+          $("#change-image")
+              .fadeOut(1000, function() {
+                   $('#change-image').attr('src','acildurumcevap2.gif');
+              })
+              .fadeIn(1000);
+      
+          }
+      });
+      $('.button3').on({
+          'click': function(){
+          $("#change-image")
+              .fadeOut(1000, function() {
+                   $('#change-image').attr('src','acildurumsorun.gif');
+              })
+              .fadeIn(1000);
+      
+          }
+      });
+      </script>
+        <script>
+          $('.button4').on({
+          'click': function(){
+          $("#change-image2")
+              .fadeOut(1000, function() {
+                   $('#change-image2').attr('src','gunescevap1.gif');
+              })
+              .fadeIn(1000);
+              
+          }
+      });
+      
+      $('.button5').on({
+          'click': function(){
+          $("#change-image2")
+              .fadeOut(1000, function() {
+                   $('#change-image2').attr('src','gunescevap3.gif');
+              })
+              .fadeIn(1000);
+      
+          }
+      });
+      $('.button6').on({
+          'click': function(){
+          $("#change-image2")
+              .fadeOut(1000, function() {
+                   $('#change-image2').attr('src','gunessorun.gif');
+              })
+              .fadeIn(1000);
+      
+          }
+      });
+      </script>
+        <script>
+          $('.button7').on({
+          'click': function(){
+          $("#change-image3")
+              .fadeOut(1000, function() {
+                   $('#change-image3').attr('src','marscevap1.gif');
+              })
+              .fadeIn(1000);
+              
+          }
+      });
+      
+      $('.button8').on({
+          'click': function(){
+          $("#change-image3")
+              .fadeOut(1000, function() {
+                   $('#change-image3').attr('src','marssorun.gif');
+              })
+              .fadeIn(1000);
+      
+          }
+      });
+      $('.button9').on({
+          'click': function(){
+          $("#change-image3")
+              .fadeOut(1000, function() {
+                   $('#change-image3').attr('src','marssorun.gif');
+              })
+              .fadeIn(1000);
+      
+          }
+      });
+      </script>
+        <script>
+          $('.button10').on({
+          'click': function(){
+          $("#change-image4")
+              .fadeOut(1000, function() {
+                   $('#change-image4').attr('src','spaceApps.png');
+              })
+              .fadeIn(1000);
+              
+          }
+      });
+      
+      
+      $('.button12').on({
+          'click': function(){
+          $("#change-image4")
+              .fadeOut(1000, function() {
+                   $('#change-image4').attr('src','spaceApps.png');
+              })
+              .fadeIn(1000);
+      
+          }
+      });
+      </script>
+        <script>
+          
+      
+      $('.button14').on({
+          'click': function(){
+          $("#change-image5")
+              .fadeOut(1000, function() {
+                   $('#change-image5').attr('src','spaceApps.png');
+              })
+              .fadeIn(1000);
+      
+          }
+      });
+      $('.button15').on({
+          'click': function(){
+          $("#change-image5")
+              .fadeOut(1000, function() {
+                   $('#change-image5').attr('src','gunessorun.gif');
+              })
+              .fadeIn(1000);
+      
+          }
+      });
+      </script>
+        <script>
+          $('.button16').on({
+          'click': function(){
+          $("#change-image6")
+              .fadeOut(1000, function() {
+                   $('#change-image6').attr('src','gorulducevap.gif');
+              })
+              .fadeIn(1000);
+              
+          }
+      });
+      
+      
+      $('.button18').on({
+          'click': function(){
+          $("#change-image6")
+              .fadeOut(1000, function() {
+                   $('#change-image6').attr('src','goruldusorun.gif');
+              })
+              .fadeIn(1000);
+      
+          }
+      });
+      </script>
+        <script>
+          $('.button19').on({
+          'click': function(){
+          $("#change-image7")
+              .fadeOut(1000, function() {
+                   $('#change-image7').attr('src','hbd2.gif');
+              })
+              .fadeIn(1000);
+              
+          }
+      });
+      
+      $('.button20').on({
+          'click': function(){
+          $("#change-image7")
+              .fadeOut(1000, function() {
+                   $('#change-image7').attr('src','hbd1.gif');
+              })
+              .fadeIn(1000);
+      
+          }
+      });
+      $('.button21').on({
+          'click': function(){
+          $("#change-image7")
+              .fadeOut(1000, function() {
+                   $('#change-image7').attr('src','hbd1.gif');
+              })
+              .fadeIn(1000);
+      
+          }
+      });
+      </script>
+
+
+
+
+
+
+      <script>
+         $(function(){
+    $('#top').click(function () {
+     $('.totop a').attr('href','index.html');
+  });
+  $(window).show(function () {
+    
+    $('.totop a').fadeIn(500);
+   
+  });
+});
+      </script>
+   
+   <p class="totop"> 
+    <a id="top">
+      <img class="img-fluid " src="return.png">
+    </a> 
+</p>
+    </body> 
+</html>
